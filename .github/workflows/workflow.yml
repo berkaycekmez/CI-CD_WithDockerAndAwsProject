@@ -56,5 +56,5 @@ jobs:
           # password: ${{ secrets.CLOUD_PASSWORD }}
           port: 22                                  # SSH portu (genellikle 22)
           source: "build/libs/*.jar"                # Kopyalanacak JAR dosyasının yolu (Gradle build'e göre değişebilir)
-          target: "/path/on/your/server/"           # Sunucuda JAR dosyasının kopyalanacağı hedef dizin
+          target: "/home/ubuntu/"                   # Sunucuda JAR dosyasının kopyalanacağı hedef dizin
           strip_components: 2                       # 'build/libs/' kısmını atlayarak sadece dosya adını kopyalar
