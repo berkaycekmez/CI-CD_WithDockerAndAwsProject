@@ -48,7 +48,7 @@ jobs:
           context: . 
           file: ./Dockerfile 
           push: true 
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/CI-CD_WithDockerAndAwsProject:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/ci_cd_docker_aws:latest
 
       - name: Copy JAR to Cloud via SCP
         uses: appleboy/scp-action@master
